@@ -7,7 +7,7 @@ import Page404 from "./pages/Page404";
 function App() {
   return (
     <div className="App">
-    <Router>
+      <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
