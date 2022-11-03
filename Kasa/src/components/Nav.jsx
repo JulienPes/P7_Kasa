@@ -2,14 +2,14 @@ import { NavLink } from "react-router-dom";
 const Nav = () =>{
     return (<div className="linki">
 <NavLink
-  className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
+  className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}
   end="/"
   to="/"
 >
   Accueil
 </NavLink>
 <NavLink
-  className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
+  className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}
   end="about"
   to="/about"
 >
