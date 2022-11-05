@@ -160,3 +160,15 @@ a {
     margin-top: 31px;
     position: relative
 }
+.about-reply {
+    background: var(--location-section-bg);
+    padding-top: 27px;
+}
+.about-reply p {
+    font-weight: 400;
+    font-size: clamp(12px, 4vw, 24px);
+    line-height: clamp(17px, 4vw, 34px);
+    color: var(--primary-color);
+    margin-left: 18px;
+    margin-bottom: 4px;
+}
