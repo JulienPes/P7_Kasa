@@ -14,6 +14,7 @@ const Accordeon = ({ question }) => {
                 <h3>{title}</h3>
                 <button 
                     className="btn-chevron" 
+                    // ??
                     onClick={() => setShowReply(!showReply)}
                     // Si montrer texte alors ChevronUp
                 >

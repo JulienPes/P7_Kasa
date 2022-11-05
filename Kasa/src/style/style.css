@@ -15,19 +15,20 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
     margin: 0 100px;
 }
 .kasa-logo {
-    height: 68px;
-    width: 210px;
+    height: 12%;
+    width: 12%;
     margin-left: 70px;
     margin-top: 40px;
 }
 .linki{
     margin-right: 70px;
     position: relative;
+
 }
 .nav-link {
     color: var(--primary-color);
@@ -139,7 +140,7 @@ a {
     justify-content: center;
     width: 100%;
     height: 223px;
-    margin-top: 80px;
+    margin: 50px 0 0 0;
     position: relative;
     overflow: hidden;
 }
@@ -166,9 +167,37 @@ a {
 }
 .about-reply p {
     font-weight: 400;
-    font-size: clamp(12px, 4vw, 24px);
+    font-size: clamp(12px, 4vw, 20px);
     line-height: clamp(17px, 4vw, 34px);
     color: var(--primary-color);
+    margin: 0 15px;
+    padding:0 0 10px 0
+}
+.accordeon {
+    width: 80%;
+    margin-bottom: 33px;
+}
+.accordeon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 47px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.accordeon-header h3 {
+    font-weight: 500;
+    font-size: clamp(13px, 4vw, 24px);
     margin-left: 18px;
-    margin-bottom: 4px;
+}
+.btn-chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0 5px;
+    margin-right: 16px;
 }
