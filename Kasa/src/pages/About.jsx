@@ -8,8 +8,9 @@ const About = () => {
     <div>
       <div className="about-img">
         <img src={Banner} alt="Bg banner" className="about-image-banner"/>
-      </div> 
-      <section>
+      </div>
+      
+      <section className="about-section">
         {questions.map(question => {
           return <Accordeon question={question} key={question.id} />
         })}
