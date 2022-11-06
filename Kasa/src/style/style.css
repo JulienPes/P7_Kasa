@@ -201,3 +201,34 @@ a {
     padding: 0 5px;
     margin-right: 16px;
 }
+/**** PAGE 404 ****/
+.section-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-404 {
+    font-weight: 700;
+    font-size: clamp(99px, 20vw, 288px);
+    margin-top: 174px;
+    color: var(--primary-color);
+}
+.p-container-404 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.p-404 {
+    font-weight: 500;
+    font-size: clamp(18px, 5vw, 36px);
+    color: var(--primary-color);
+    margin-top: 66px;
+    text-align: center;
+}
+.a-404 {
+    font-weight: 500;
+    font-size: clamp(14px, 2vw, 18px);
+    color: var(--primary-color);
+    margin-top: 182px;
+    text-decoration: underline;
+}
