@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-// Affichage des "tags" à finir
+
 const Tag = ({value}) => {
   return (
-    <div>{value}</div>
+    <div className="tag">{value}</div>
   )
 }
 

@@ -233,10 +233,61 @@ a {
     text-decoration: underline;
 }
 /***Logement page ***/
+/***Star***/
 .star {
     height: 30px;
     width: 30px;
 }
 .star-active {
     fill: var(--primary-color);
+}
+/***Infos***/
+.location-basic-infos {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+.location-container {
+    display: flex;
+    flex-direction: column;
+}
+.location-infos h1 {
+    font-weight: 500;
+    font-size: clamp(18px, 4vw, 36px);
+}
+.location-infos-location {
+    font-weight: 500;
+    font-size: clamp(14px, 4vw, 18px);
+}
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 84px;
+    height: 22px;
+    padding: 0 20px;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: clamp(10px, 1vw, 14px);
+}
+.tag-container {
+    display: flex;
+    margin-top: 12px;
+}
+.host-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+.host-img {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 11px;
 }

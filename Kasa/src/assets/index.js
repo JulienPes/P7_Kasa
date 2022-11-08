@@ -1,5 +1,3 @@
-export { default as ChevronLeft } from "./Chevron_Left.svg";
-export { default as ChevronRight } from "./Chevron_Right.svg";
 export { default as ChevronDown } from "./Chevron_Down.svg";
 export { default as ChevronUp } from "./Chevron_Up.svg";
 export { default as FooterLogo } from "./Footer_Logo.png";

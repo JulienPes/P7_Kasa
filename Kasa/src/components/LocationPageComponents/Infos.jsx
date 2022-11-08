@@ -6,28 +6,31 @@ const Infos = ({currentLocation}) => {
     const { title, location, tags, rating, host } = currentLocation;
     
     return (
-    <div>
-        <div>
-            <h1>{title}</h1>
-            <h3>{location}</h3>
-            <div>
-                {tags.map(tag => {
-                return <Tag value={tag} key={tag}/> 
-                })}
+    <div className="location-basic-infos">
+        <div className="location-container">
+            <div className="location-infos">
+                <h1>{title}</h1>
+                <h3 className="location-infos-location">{location}</h3>
+                <div className="tag-container">
+                    {tags.map(tag => {
+                    return <Tag value={tag} key={tag}/> 
+                    })}
+                </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <Rating rating={rating}/>
-            </div>
-            <div>
-                <h2>{host.name}</h2>
-                <img src={host.picture} alt={host.name} />
+            <div className="host-infos">
+                <div>
+                    <Rating rating={rating}/>
+                </div>
+                <div className="host-box">
+                    <h2>{host.name}</h2>
+                    <img src={host.picture} alt={host.name} className="host-img"/>
+                </div>
             </div>
         </div>
     </div>
   )
 }
+
 Infos.propTypes = {
     currentLocation : PropTypes.shape({
         title: PropTypes.string,
@@ -37,6 +40,5 @@ Infos.propTypes = {
         host: PropTypes.object,
     })
 }
-
 
 export default Infos
