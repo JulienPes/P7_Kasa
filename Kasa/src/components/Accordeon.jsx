@@ -1,13 +1,11 @@
 import React, {useState} from 'react'
-import ChevronDown from "../assets/Chevron_Down.svg";
-import ChevronUp from "../assets/Chevron_Up.svg";
+import { ChevronDown, ChevronUp } from '../assets';
+import PropTypes from "prop-types";
 
-const Accordeon = ({ question }) => {
-    // Si montrer texte alors setShowReply, position de départ "faalse"
+const Accordeon = ({ content }) => {
+    // Si montrer texte alors setShowReply, position de départ "false"
     const [showReply, setShowReply] = useState(false);
-    const { title, reply } = question;
-
-
+    const { title, reply, equipments } = content;
     return (
         <div className="accordeon">
             <header className="accordeon-header">
@@ -18,14 +16,27 @@ const Accordeon = ({ question }) => {
                     onClick={() => setShowReply(!showReply)}
                     // Si montrer texte alors ChevronUp
                 >
-                    <img src={showReply ? ChevronUp : ChevronDown} alt="close/open"/>
+                    <img src={showReply ? ChevronUp : ChevronDown} alt="close/open" className="chevron"/>
                 </button>
             </header>
-            {showReply && <div className="about-reply">
+            {showReply && reply && <div className="about-content">
                 <p>{reply}</p>
-                </div>}
+            </div>}
+            {showReply && equipments && <div className="about-content">
+                {equipments.map(equipment => {
+                    return <span key={equipment}>{equipment}</span>
+                })}
+            </div>}
         </div>
     )
+}
+
+Accordeon.propTypes = {
+    content: PropTypes.shape({
+        title: PropTypes.string,
+        reply: PropTypes.string,
+        equipments: PropTypes.array,
+    })
 }
 
 export default Accordeon

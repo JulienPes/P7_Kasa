@@ -232,3 +232,11 @@ a {
     margin-top: 182px;
     text-decoration: underline;
 }
+/***Logement page ***/
+.star {
+    height: 30px;
+    width: 30px;
+}
+.star-active {
+    fill: var(--primary-color);
+}

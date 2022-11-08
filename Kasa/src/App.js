@@ -1,10 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Location from "./pages/Location";
-import Page404 from "./pages/Page404";
+import { Header, Footer } from "./components";
+import { About, Home, LocationPage, Page404 } from "./pages";
+
 
 function App() {
   return (
@@ -13,13 +10,13 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/location/:id" element={<Location />} />
+          <Route path="/location/:id" element={<LocationPage />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
       </Router>
-    </div>
+      </div>
   );
 }
 
