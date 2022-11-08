@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Rating = ({rating}) => {
     return (
         // Map sur le tableau contenant 5 étoiles
-        <div>
+        <div className="star-container">
             {[...Array(5)].map((star, index) => {
                 // ??
                 return  <svg key={index} className="star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
