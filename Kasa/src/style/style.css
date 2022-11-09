@@ -102,7 +102,6 @@ a {
 
 }
 .location-section-div {
-   
     display: flex;
     flex-wrap: wrap;
     gap: 48.6px;
@@ -321,10 +320,11 @@ a {
 .carousel {
     overflow: hidden;
     width: 90%;
-    height: 235px;
+    height: 255px;
     margin: 30px auto 15px;
     max-width: 1240px;
     position: relative;
+    border-radius: 10px;
 }
 .carousel-img {
     height: 100%;
@@ -334,19 +334,85 @@ a {
 }
 .carousel-btn {
     position: absolute;
-    top: 60%;
+    top: 45%;
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 2;
 }
 .carousel-btn img {
-    height: 60px;
-    width: 32px;
+    height: 20px;
+    width: 12px;
 }
 .previous-btn {
-    left:16px;
+    left:6px;
 }
 .next-btn {
-    right: 4px;
+    right: 6px;
+}
+
+@media (min-width:420px) {
+    .more-infos .accordeon {
+        width: 100%;
+    }
+}
+@media(min-width:800px) {
+    .carousel {
+        height: 415px;
+        border-radius: 25px;
+    }
+    .carousel-btn img {
+        height: 79px;
+        width: 47px;
+    }
+    .previous-btn {
+        left: 23px;
+    }
+    .next-btn {
+        right: 23px;
+    }
+    .location-infos h1 {
+        max-width: 600px;
+    }
+    .more-infos {  
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 1240px;
+    }
+    .more-infos > .accordeon ~ .accordeon{
+        margin-left: 76px;
+    }
+    .more-infos .about-content {
+        min-height: 250px;
+    }
+    .host-infos {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .location-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .host-box {
+        display: flex;
+        margin-top: -10px;
+    }
+    .host-box h2 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .host-img {
+        height: 64px;
+        width: 64px;
+    }
+    .tag {
+        height: 25px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .star {
+        height: 30px;
+        width: 30px;
+    }
+
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import {AboutImage} from "../assets";
-import {Accordeon} from '../components';
+import { AboutImage } from "../assets";
+import { Accordeon } from '../components';
 import questions from "../data/questions.json";
 
 const About = () => {
