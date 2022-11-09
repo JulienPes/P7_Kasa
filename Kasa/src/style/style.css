@@ -317,3 +317,36 @@ a {
     align-items: flex-start;
     max-width: 1240px;
 }
+/***carousel***/
+.carousel {
+    overflow: hidden;
+    width: 90%;
+    height: 235px;
+    margin: 30px auto 15px;
+    max-width: 1240px;
+    position: relative;
+}
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.carousel-btn {
+    position: absolute;
+    top: 60%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.carousel-btn img {
+    height: 60px;
+    width: 32px;
+}
+.previous-btn {
+    left:16px;
+}
+.next-btn {
+    right: 4px;
+}
