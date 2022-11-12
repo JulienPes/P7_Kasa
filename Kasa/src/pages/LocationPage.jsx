@@ -1,12 +1,17 @@
 import React, {Fragment} from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import locations from "../data/data.json";
+// Déstructuration : dans le chemin componnents récupéré..
 import { Carousel, Infos } from "../components/LocationPageComponents"
 import { Accordeon } from '../components';
 
 const LocationPage = () => {
   const { id } = useParams();
+  // const location = boucle sur tableau d'objet et cherche l'objet avec le même id
   const location = locations.find(location => location.id === id)
+  if (location === undefined) {
+    return <Navigate to="*" />;
+  }
 
     return (
       <Fragment>

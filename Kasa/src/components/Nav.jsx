@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Nav = () =>{
-    return (<div className="linki">
+    return (<nav className="navbar">
+  {/* */ }
 <NavLink
   className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}
   end="/"
@@ -15,7 +16,8 @@ const Nav = () =>{
 >
   A Propos
 </NavLink>
-</div>)
+</nav>
+)
 } 
 
 export default Nav

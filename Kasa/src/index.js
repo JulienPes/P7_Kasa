@@ -6,6 +6,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // Strictmode pour afficher toutes les erreurs
   <React.StrictMode>
     <App />
   </React.StrictMode>

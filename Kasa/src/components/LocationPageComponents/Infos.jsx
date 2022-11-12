@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Infos = ({currentLocation}) => {
     const { title, location, tags, rating, host } = currentLocation;
-    
+    // Key = identifiant unique 
     return (
     <div className="location-basic-infos">
         <div className="location-container">
@@ -12,8 +12,8 @@ const Infos = ({currentLocation}) => {
                 <h1>{title}</h1>
                 <h3 className="location-infos-location">{location}</h3>
                 <div className="tag-container">
-                    {tags.map(tag => {
-                    return <Tag value={tag} key={tag}/> 
+                    {tags.map((tag, index) => {
+                    return <Tag value={tag} key={index}/> 
                     })}
                 </div>
             </div>

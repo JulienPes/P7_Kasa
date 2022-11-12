@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import { ChevronLeft, ChevronRight } from '../../assets'
 import PropTypes from "prop-types";
-
+// Déclare un tableau avec un setter me permettant de changer la valeur d'une variable
+// useState est un hook 
 const Carousel = ({ pictures }) => {
   const [index, setIndex] = useState(0);
-
+// Mesure la longueur du tableau et fait un -1
   const showPreviousPhoto = () => {
     if(index === 0) setIndex(pictures.length-1)
     else setIndex(index-1);

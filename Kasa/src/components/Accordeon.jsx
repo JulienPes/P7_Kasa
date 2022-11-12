@@ -12,10 +12,11 @@ const Accordeon = ({ content }) => {
                 <h3>{title}</h3>
                 <button 
                     className="btn-chevron" 
-                    // ??
+                    // Toggle si vrai devient faux si faux devient vrai
                     onClick={() => setShowReply(!showReply)}
                     // Si montrer texte alors ChevronUp
                 >
+                    {/* si showReply est a true */} 
                     <img src={showReply ? ChevronUp : ChevronDown} alt="close/open" className="chevron"/>
                 </button>
             </header>
@@ -23,8 +24,8 @@ const Accordeon = ({ content }) => {
                 <p>{reply}</p>
             </div>}
             {showReply && equipments && <div className="about-content">
-                {equipments.map(equipment => {
-                    return <span key={equipment}>{equipment}</span>
+                {equipments.map((equipment,index) => {
+                    return <span key={index}>{equipment}</span>
                 })}
             </div>}
         </div>
