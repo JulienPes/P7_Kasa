@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag, Rating } from "../LocationPageComponents";
+import { Tag, Rating } from ".";
 import PropTypes from "prop-types";
 
 const Infos = ({currentLocation}) => {

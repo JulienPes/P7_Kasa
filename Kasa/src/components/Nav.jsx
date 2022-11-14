@@ -3,14 +3,14 @@ const Nav = () =>{
     return (<nav className="navbar">
   {/* */ }
 <NavLink
-  className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}
+  className={({ isActive }) => (isActive ? "nav-active nav-link" : "nav-link")}
   end="/"
   to="/"
 >
   Accueil
 </NavLink>
 <NavLink
-  className={({ isActive }) => (isActive ? "active-link nav-link" : "nav-link")}
+  className={({ isActive }) => (isActive ? "nav-active nav-link" : "nav-link")}
   end="about"
   to="/about"
 >
