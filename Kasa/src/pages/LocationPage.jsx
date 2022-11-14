@@ -1,4 +1,4 @@
-// Afin de rajouter plus facilements plusieurs enfants
+// Afin de regrouper tous les noeuds dans un noeud virtuel
 import React, {Fragment} from 'react'
 // useParams = search params , Navigate = pour la navigation  
 import { useParams, Navigate } from 'react-router-dom';
@@ -17,7 +17,7 @@ const LocationPage = () => {
 
     return (
       <Fragment>
-        <Carousel pictures={location.pictures} key={"Carousel"}/>
+        <Carousel pictures={location.pictures} />
         <Infos currentLocation={location}/>
         <div className="more-infos">
           <Accordeon content={{title: "Description", reply: location.description }} />

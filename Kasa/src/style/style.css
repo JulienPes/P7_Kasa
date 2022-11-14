@@ -362,6 +362,8 @@ a {
 .tag-container {
     display: flex;
     margin-top: 12px;
+    flex-flow: wrap;
+    gap: 5px;
 }
 .tag {
     display: flex;
@@ -395,9 +397,9 @@ a {
 }
 .host-box h2 {
     text-align: end;
-    max-width: 93px;
+    max-width: 86px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
 }
 .more-infos {
     display: flex;
@@ -418,6 +420,11 @@ a {
 @media (min-width:420px) {
     .more-infos .accordeon {
         width: 100%;
+    }
+}
+@media(min-width:800px) and (max-width:890px){
+    .accordeon-header{
+        width: 70%;
     }
 }
 @media(min-width:800px) {
