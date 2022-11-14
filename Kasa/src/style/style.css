@@ -260,7 +260,7 @@ a {
 .accordeon {
     margin-top: 31px;
     overflow: hidden;
-    min-width: 335px;
+    min-width: 370px;
     max-width: 1023px;
 }
 .accordeon-header {
@@ -414,6 +414,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 @media (min-width:420px) {
     .more-infos .accordeon {
         width: 100%;
