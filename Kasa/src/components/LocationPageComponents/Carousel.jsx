@@ -7,12 +7,16 @@ const Carousel = ({ pictures }) => {
   const [index, setIndex] = useState(0);
 // Mesure la longueur du tableau et fait un -1
   const showPreviousPhoto = () => {
+    // Si index est à 0 alors faire -1
     if(index === 0) setIndex(pictures.length-1)
+    // Autre faire -1
     else setIndex(index-1);
   }
 
   const showNextPhoto = () => {
+    // si index est à -1 alors mettre a 0
     if(index === pictures.length-1) setIndex(0)
+    // Autre faire +1
     else setIndex(index+1)
   }
 

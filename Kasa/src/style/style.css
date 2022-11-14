@@ -39,10 +39,16 @@ a {
 .nav-active {
     text-decoration: underline;
 }
+@media (min-width: 320px){
+    .header-container{
+        padding: 0 18px 0 18px;
+    }
+}
 @media (min-width: 420px) {
     .nav-link:nth-of-type(even) {
         margin-left: 57px;
     }
+   
 }
 @media (min-width: 800px) {
     .kasa-logo {

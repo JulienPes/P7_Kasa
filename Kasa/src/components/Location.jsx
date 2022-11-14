@@ -1,4 +1,5 @@
 import React from 'react'
+// Afin d'avoir le lien
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 //Affichage des locations

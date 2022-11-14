@@ -1,4 +1,6 @@
+// Afin de rajouter plus facilements plusieurs enfants
 import React, {Fragment} from 'react'
+// useParams = search params , Navigate = pour la navigation  
 import { useParams, Navigate } from 'react-router-dom';
 import locations from "../data/data.json";
 // Déstructuration : dans le chemin componnents récupéré..

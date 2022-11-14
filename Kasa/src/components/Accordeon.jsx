@@ -1,9 +1,10 @@
+// Donner la position de départ
 import React, {useState} from 'react'
 import { ChevronDown, ChevronUp } from '../assets';
 import PropTypes from "prop-types";
 
 const Accordeon = ({ content }) => {
-    // Si montrer texte alors setShowReply, position de départ "false"
+    // Montrer réponse position de départ "false"
     const [showReply, setShowReply] = useState(false);
     const { title, reply, equipments } = content;
     return (

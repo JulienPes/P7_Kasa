@@ -1,3 +1,4 @@
+// Pour manipuler les url de navigation
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./components";
 import { About, Home, LocationPage, Page404 } from "./pages";
